@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='courses.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EduPlatform</h1>
+
+            <ul class="nav-links">
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+
+        <section class="profile-container">
+
+            <div class="profile-header">
+                <img src="" alt="User">
+
+
+                <div class="profile-info">
+                    <h2>Name</h2>
+                    <p>Major</p>
+
+                    <div class="user-details">
+                        <p><strong>Email:</strong> -------</p>
+                        <p><strong>Phone:</strong> -------</p>
+                        <p><strong>Age:</strong> -------</p>
+                        <p><strong>Major:</strong> -------</p>
+                    </div>
+                </div>
+
+                <button class="btn-primary edit-btn">Edit Profile</button>
+
+            </div>
+
+            <div class="skills-section">
+                <h3>My Skills</h3>
+
+                <div class="skill-item">
+                    <span>Skill 1</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>Skill 2</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>Skill 3</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

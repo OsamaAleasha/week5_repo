@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='courses.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EduPlatform</h1>
+
+            <ul class="nav-links">
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="course-detail-page">
+
+        <section class="course-hero">
+            <img src="" alt="Course Image">
+        </section>
+
+        <section class="course-details-container">
+
+            <article class="course-main">
+                <h1>Course Title</h1>
+
+                <p class="course-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quasi nesciunt iure ad, suscipit optio voluptas recusandae temporibus vel, beatae dolore nihil velit delectus mollitia architecto inventore magni perspiciatis placeat!
+                </p>
+
+                <div class="skills">
+                    <h3>Skills Required</h3>
+                    <span class="skill">Skill 1</span>
+                    <span class="skill">Skill 2</span>
+                </div>
+
+                <div class="instructor-box">
+                    <h3>Instructor</h3>
+                    <p>Instructor name</p>
+                </div>
+            </article>
+
+            <aside class="course-sidebar">
+                <div class="enroll-card">
+                    <h2>Start Learning Today</h2>
+                    <button class="btn-primary">Enroll Now</button>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+</body>
+
+</html>

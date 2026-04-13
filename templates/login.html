@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EduPlatform</h1>
+        </nav>
+    </header>
+
+    <main>
+    <section class="auth-container">
+
+        <article class="auth-card">
+            <h2>Login</h2>
+
+            <form action="/api/auth/login" method="POST">
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Login</button>
+                </div>
+
+            </form>
+
+            <div class="auth-links">
+                <a href="#">Forgot Password?</a>
+                <p>
+                    Don't have an account?
+                    <a href="">Sign Up</a>
+                </p>
+            </div>
+
+        </article>
+
+    </section>
+</main>
+</body>
+
+</html>

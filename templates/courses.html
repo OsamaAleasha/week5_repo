@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='courses.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EduPlatform</h1>
+
+            <ul class="nav-links">
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="courses-page">
+
+        <section class="filters-section">
+
+            <input type="text" placeholder="Search Courses..." class="search-bar">
+
+            <div class="filters">
+
+                <select>
+                    <option>All Skills</option>
+                    <option>Programming</option>
+                    <option>Design</option>
+                    <option>Data Analysis</option>
+                </select>
+
+                <select>
+                    <option>Level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="courses-grid">
+
+            <article class="course-card">
+                <img src="" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Description</p>
+                <span class="instructor">By John Doe</span>
+                <button>View Details</button>
+            </article>
+
+            <article class="course-card">
+                <img src="" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Description</p>
+                <span class="instructor">By John Doe</span>
+                <button>View Details</button>
+            </article>
+
+            <article class="course-card">
+                <img src="" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Description</p>
+                <span class="instructor">By John Doe</span>
+                <button>View Details</button>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

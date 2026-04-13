@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EduPlatform</h1>
+        </nav>
+    </header>
+
+    <main>
+    <section class="auth-container">
+
+        <article class="auth-card">
+            <h2>Login</h2>
+
+            <form action="/api/auth/register" method="POST">
+
+                <!-- Username -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Age">
+                </div>
+
+                <!-- Major -->
+                <div class="form-group">
+                    <label for="major">Age</label>
+                    <input type="text" id="major" name="major" placeholder="Major">
+                </div>
+
+                <!-- Skills -->
+                <div class="form-group">
+                    <label>Select Your Skills</label>
+
+                    <div class="skills-grid">
+                        <label><input type="checkbox" name="skills" value="Programming">Programming</label>
+                        <label><input type="checkbox" name="skills" value="Design">Design</label>
+                        <label><input type="checkbox" name="skills" value="Marketing">Marketing</label>
+                        <label><input type="checkbox" name="skills" value="Writing">Writing</label>
+                        <label><input type="checkbox" name="skills" value="Data Analysis">Data Analysis</label>
+                        <label><input type="checkbox" name="skills" value="Project Management">Project Management</label>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Login</button>
+                </div>
+
+            </form>
+
+            <div class="auth-links">
+                <a href="#">Forgot Password?</a>
+                <p>
+                    Don't have an account?
+                    <a href="">Sign Up</a>
+                </p>
+            </div>
+
+        </article>
+
+    </section>
+</main>
+</body>
+
+</html>
