@@ -16,10 +16,10 @@
             <h1 class="logo">EduPlatform</h1>
 
             <ul class="nav-links">
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Recommendations</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="{{ url_for('courses_page') }}">Courses</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
         <section class="course-details-container">
 
             <article class="course-main">
-                <h1>Course Title</h1>
+                <h1 class="course-title">Course Title</h1>
 
                 <p class="course-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quasi nesciunt iure ad, suscipit optio voluptas recusandae temporibus vel, beatae dolore nihil velit delectus mollitia architecto inventore magni perspiciatis placeat!
@@ -60,6 +60,10 @@
         </section>
 
     </main>
+
+    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/courses.js') }}"></script>
+
 </body>
 
 </html>

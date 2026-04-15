@@ -16,10 +16,10 @@
             <h1 class="logo">EduPlatform</h1>
 
             <ul class="nav-links">
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Recommendations</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="{{ url_for('courses_page') }}">Courses</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -50,32 +50,11 @@
 
         <section class="courses-grid">
 
-            <article class="course-card">
-                <img src="" alt="Course Image">
-                <h3>Course Title</h3>
-                <p>Description</p>
-                <span class="instructor">By John Doe</span>
-                <button>View Details</button>
-            </article>
-
-            <article class="course-card">
-                <img src="" alt="Course Image">
-                <h3>Course Title</h3>
-                <p>Description</p>
-                <span class="instructor">By John Doe</span>
-                <button>View Details</button>
-            </article>
-
-            <article class="course-card">
-                <img src="" alt="Course Image">
-                <h3>Course Title</h3>
-                <p>Description</p>
-                <span class="instructor">By John Doe</span>
-                <button>View Details</button>
-            </article>
-
         </section>
     </main>
+    
+    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/courses.js') }}"></script>
 
 </body>
 

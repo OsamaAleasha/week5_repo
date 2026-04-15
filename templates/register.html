@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
 </head>
 
+
 <body>
     <header>
         <nav class="navbar">
@@ -22,7 +23,7 @@
         <article class="auth-card">
             <h2>Login</h2>
 
-            <form action="/api/auth/register" method="POST">
+            <form id="registerForm">
 
                 <!-- Username -->
                 <div class="form-group">
@@ -56,7 +57,7 @@
 
                 <!-- Major -->
                 <div class="form-group">
-                    <label for="major">Age</label>
+                    <label for="major">Major</label>
                     <input type="text" id="major" name="major" placeholder="Major">
                 </div>
 
@@ -65,18 +66,18 @@
                     <label>Select Your Skills</label>
 
                     <div class="skills-grid">
-                        <label><input type="checkbox" name="skills" value="Programming">Programming</label>
-                        <label><input type="checkbox" name="skills" value="Design">Design</label>
-                        <label><input type="checkbox" name="skills" value="Marketing">Marketing</label>
-                        <label><input type="checkbox" name="skills" value="Writing">Writing</label>
-                        <label><input type="checkbox" name="skills" value="Data Analysis">Data Analysis</label>
-                        <label><input type="checkbox" name="skills" value="Project Management">Project Management</label>
+                        <label><input type="checkbox" name="skills" value="1">Programming</label>
+                        <label><input type="checkbox" name="skills" value="2">Design</label>
+                        <label><input type="checkbox" name="skills" value="3">Marketing</label>
+                        <label><input type="checkbox" name="skills" value="4">Writing</label>
+                        <label><input type="checkbox" name="skills" value="5">Data Analysis</label>
+                        <label><input type="checkbox" name="skills" value="6">Project Management</label>
                     </div>
                 </div>
 
                 <!-- Button -->
                 <div class="form-group">
-                    <button type="submit" class="btn-primary">Login</button>
+                    <button type="submit" class="btn-primary">Register</button>
                 </div>
 
             </form>
@@ -84,8 +85,8 @@
             <div class="auth-links">
                 <a href="#">Forgot Password?</a>
                 <p>
-                    Don't have an account?
-                    <a href="">Sign Up</a>
+                    Already have an account?
+                    <a href="{{ url_for('login_page') }}">Login</a>
                 </p>
             </div>
 
@@ -93,6 +94,10 @@
 
     </section>
 </main>
+
+<script src="{{ url_for('static', filename='js/api.js') }}"></script>
+<script src="{{ url_for('static', filename='js/auth.js') }}"></script>
+
 </body>
 
 </html>
