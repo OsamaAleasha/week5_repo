@@ -222,7 +222,7 @@ def get_course(id):
         "title": course.title,
         "description": course.description,
         "instructor": course.instructor,
-        "skills": course.skill_requirements  # text for now
+        "skills": course.skill_requirements
     })
 
 
